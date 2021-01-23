@@ -17,31 +17,35 @@
     <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
 </head>
 <body>
-    <section>
-        <header>
-            <nav>
-                <strong>{{ $page->site->title }}</strong><br>
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/posts">Posts</a></li>
-                    <li><a href="/about">About</a></li>
-                    <li><a href="/contact">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
+    <nav role="navigation">
+        <div id="menuToggle">
+            <input class="burger" type="checkbox" />
 
+            <span class="burger"></span>
+            <span class="burger"></span>
+            <span class="burger"></span>
+        </div>
+        <ul id="menu">
+            <a href="/"><li>Home</li></a>
+            <a href="/posts"><li>Posts</li></a>
+            <a href="/about"><li>About</li></a>
+            <a href="/contact"><li>Contact</li></a>
+        </ul>
+    </nav>
+
+    <section>
         <article>
             <section>
                 @yield('content')
             </section>
         </article>
 
-        <footer>
+        <footer class="w3-center w3-black w3-padding-16">
             <small>
                 &copy; <span data-year></span> {{ $page->owner->name }} &nbsp;&bull;&nbsp;
                 <a href="/feed.atom">RSS</a> &nbsp;&bull;&nbsp;
-                Maintained by Ranie Santos &nbsp;&bull;&nbsp;
-                <a href="https://github.com/raniesantos/artisan-static">GitHub repo</a>.
+                Maintained by Caroline Aubry &nbsp;&bull;&nbsp;
+                <a href="https://github.com/caubry/ngq-residents">GitHub repo</a>.
             </small>
         </footer>
     </section>

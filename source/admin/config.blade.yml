@@ -24,3 +24,15 @@ collections:
       - {label: "Image", name: "image", widget: "image"}
       - {label: "Comments", name: "comments", widget: "boolean", default: true}
       - {label: "Body", name: "body", widget: "markdown"}
+  - name: "people"
+    label: "People"
+    label_singular: "Person"
+    folder: "source/_people"
+    create: true
+    slug: "@{{slug}}"
+    fields:
+      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Responsibility", name: "responsibility", widget: "string"}
+      - {label: "Image", name: "image", widget: "image"}
+      - {label: "Order", name: "order", widget: "integer"}
+      - {label: "Body", name: "body", widget: "markdown"}

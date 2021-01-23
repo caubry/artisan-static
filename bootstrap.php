@@ -7,6 +7,7 @@ use TightenCo\Jigsaw\Jigsaw;
 
 $events->afterBuild(function ($jigsaw) {
     $jigsaw->getFilesystem()->copyDirectory(__DIR__ . '/source/_assets/favicons', $jigsaw->getDestinationPath());
+    $jigsaw->getFilesystem()->copyDirectory(__DIR__ . '/source/_assets/img', $jigsaw->getDestinationPath()); // TODO: move to cloudinary
 });
 
 function media($path)

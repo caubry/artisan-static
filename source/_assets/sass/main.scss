@@ -1,18 +1,257 @@
-// Tacit - CSS Framework for Dummies, Without Classes
-@import url('https://unpkg.com/tacit-css@1.5.1/dist/tacit-css-1.5.1.min.css');
+@import url('https://www.w3schools.com/w3css/4/w3.css');
 
 @import "~highlight.js/scss/a11y-dark";
 @import "~notyf/notyf.min";
 
-section h1:first-child {
-    margin-top: 18px;
+h1, h4 {
+    text-transform:uppercase;
 }
+
+h1 {
+    font-size: 27px;
+}
+h2 {
+    font-size: 25px;
+}
+h3 {
+    font-size: 23px;
+}
+h4 {
+    font-size: 20px;
+}
+
+.social-links {
+    padding: 0px 0px 32px 16px;
+}
+
+html, body { height: 100%; }
 
 button[data-sharer] {
     color: #fff;
 }
 
-.test-css {
-    padding: 5px;
-    border: 2px solid blue;
+input, textarea, button {
+    width: 100%;
+    padding: 6px 10px;
+    margin-bottom: 1.5rem;
+}
+
+textarea {
+    height: 200px;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+}
+
+@media only screen and (min-device-width: 768px) {
+    .form-container {
+        padding: 2%;
+        background: #ffffff;
+        border: 9px solid #4CA05C;
+        max-width: 800px;
+        margin: 32px auto 16px auto;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .people-col {
+        text-align: center !important;
+    }
+}
+
+.logo-header {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    -ms-transform:translate(-50%,-50%)
+}
+
+.w3-bar-item, .logo {
+    font-family: "Trebuchet MS", monospace
+}
+
+#mission {
+    padding-top: 0px !important;
+    padding-bottom: 32px !important;
+}
+
+.thumb {
+    width: 200px;
+    height: 200px;
+}
+
+.people-table {
+    padding: 0px 0px !important;
+    margin-top: 32px;
+}
+
+.hover-green:hover {
+    color:#FFFFFF !important;
+    background-color:#4CA05C !important;
+}
+
+* {
+    box-sizing:border-box;
+}
+//
+//nav[role="full-horizontal"] {
+//    width: 100%;
+//
+//    ul {
+//        width:100%;
+//        list-style:none;
+//
+//        > li {
+//            position:relative;
+//            float:left;
+//            padding:.25em 1em;
+//            margin:1.25em 1em;
+//
+//            text-transform:uppercase;
+//            cursor:pointer;
+//            text-align:center;
+//
+//            &:after {
+//                position:absolute;
+//                z-index:-1;
+//                content:"";
+//                right:0;
+//                border-radius:50%;
+//                box-shadow: 1em 1em 0 2em rgba(255, 255, 255, .5);
+//            }
+//
+//            &:last-child:after {
+//                box-shadow:none;
+//            }
+//
+//            &:hover {
+//                background-color:#4CA05C;
+//                > a {
+//                    color:#fff;
+//                }
+//            }
+//
+//            > a {
+//                color:#333;
+//                text-decoration:none;
+//                font-size: 1.4em;
+//            }
+//        }
+//    }
+//}
+
+/* small screens */
+@media screen and (max-width: 44em) {
+    nav[role="navigation"] {
+        background-color: #F9F9F9;
+        overflow: hidden;
+        position: fixed;
+        width: 100%;
+        height: 55px;
+        z-index: 1;
+        box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    }
+
+    #menuToggle {
+        left: 16px;
+        margin: 16px 16px auto;
+        z-index: 1;
+        -webkit-user-select: none;
+        user-select: none;
+        float: left;
+    }
+
+    #menuToggle input {
+        display: block;
+        width: 40px;
+        height: 32px;
+        position: relative;
+        float: left;
+        top: -7px;
+        left: -5px;
+
+        opacity: 0; /* hide this */
+        z-index: 2; /* and place it over the hamburger */
+
+        -webkit-touch-callout: none;
+    }
+
+    #menuToggle span {
+        display: block;
+        width: 33px;
+        height: 4px;
+        margin-bottom: 5px;
+        position: relative;
+
+        background: #cdcdcd;
+        border-radius: 3px;
+
+        z-index: 1;
+
+        transform-origin: 4px 0px;
+
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+        background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+        opacity 0.55s ease;
+    }
+
+    #menuToggle span:first-child {
+        transform-origin: 0% 0%;
+    }
+
+    #menuToggle span:nth-last-child(2) {
+        transform-origin: 0% 100%;
+    }
+
+    #menuToggle input:checked ~ span {
+        opacity: 1;
+        transform: rotate(45deg) translate(-2px, -1px);
+        background: #232323;
+    }
+
+    #menuToggle input:checked ~ span:nth-last-child(3) {
+        opacity: 0;
+        transform: rotate(0deg) scale(0.2, 0.2);
+    }
+
+    #menuToggle input:checked ~ span:nth-last-child(2) {
+        transform: rotate(-45deg) translate(0, -1px);
+    }
+
+    #menu {
+        position: absolute;
+        width: 300px;
+        margin: -100px 0 0 -50px;
+        padding: 50px;
+        padding-top: 125px;
+
+        background: #ededed;
+        list-style-type: none;
+        -webkit-font-smoothing: antialiased;
+        /* to stop flickering of text in safari */
+
+        //transform-origin: 0% 0%;
+        //transform: translate(-100%, 0);
+
+        //transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    }
+
+    #menu li {
+        padding: 10px 0;
+        font-size: 22px;
+        text-transform:uppercase;
+    }
+
+    #menuToggle input:checked ~ ul {
+        transform: none;
+    }
+
+    #menuToggle a {
+        text-decoration: none;
+        color: #232323;
+        transition: color 0.3s ease;
+    }
 }

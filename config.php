@@ -4,14 +4,14 @@ return [
     'production' => false,
     'baseUrl' => 'https://artisanstatic.netlify.app',
     'site' => [
-        'title' => 'My Jigsaw Blog',
-        'description' => 'Personal blog of John Doe.',
+        'title' => 'NGQ Residents Association',
+        'description' => 'Website for NGQ residents',
         'image' => 'default-share.png',
     ],
     'owner' => [
-        'name' => 'John Doe',
-        'twitter' => 'johndoe',
-        'github' => 'johndoe',
+        'name' => 'NGQ Residents Association',
+        'twitter' => '',
+        'github' => '',
     ],
     'services' => [
         'cmsVersion' => '2.10.67',
@@ -24,6 +24,10 @@ return [
         ],
     ],
     'collections' => [
+        'people' => [
+            'path' => 'people/{filename}',
+            'isPerson' => true,
+        ],
         'posts' => [
             'path' => 'posts/{filename}',
             'sort' => '-date',
