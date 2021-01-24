@@ -1,8 +1,9 @@
 ---
-title: '02 - Favicons'
+title: 'Favicons'
 date: 2020-05-12
 image: https://res.cloudinary.com/artisanstatic/icons.jpg
-comments: false
+description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+comments: true
 ---
 Recommendation: [RealFaviconGenerator](https://realfavicongenerator.net)
 

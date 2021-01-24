@@ -1,8 +1,9 @@
 ---
-title: '08 - Cloudinary Media Library'
+title: 'Cloudinary Media Library'
 date: 2020-05-18
 image: https://res.cloudinary.com/artisanstatic/photos.jpg
 comments: false
+description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
 ---
 Register on [Cloudinary](https://cloudinary.com/invites/lpov9zyyucivvxsnalc5/qq2slabgpy590znlop4j).
 

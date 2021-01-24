@@ -1,7 +1,8 @@
 ---
-title: '05 - Formcarry Contact Form'
+title: 'Formcarry Contact Form'
 date: 2020-05-15
 image: https://res.cloudinary.com/artisanstatic/contact.jpg
+description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
 comments: false
 ---
 Register on [Formcarry](https://formcarry.com/register) and get your **Formcarry ID**. Then go to `config.php` and add your ID under the `services` key.

@@ -1,7 +1,8 @@
 ---
-title: '03 - Google Analytics'
+title: 'Google Analytics'
 date: 2020-05-13
 image: https://res.cloudinary.com/artisanstatic/analytics.jpg
+description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
 comments: false
 ---
 Register the website on [Google Analytics](https://analytics.google.com/analytics/web).
