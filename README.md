@@ -2,6 +2,8 @@
 
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://oss.ninja/mit/raniesantos)
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/fa3af7b9-d37f-45d8-b923-ecdba8fbb889/deploy-status)](https://app.netlify.com/sites/admiring-babbage-9e06ba/deploys)
+
 Website for New Garden Quarter Residents.
 
 ___
