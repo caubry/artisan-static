@@ -2,7 +2,7 @@
 
 return [
     'production' => false,
-    'baseUrl' => 'http://localhost:3000',
+    'baseUrl' => 'https://admiring-babbage-9e06ba.netlify.app',
     'site' => [
         'title' => 'NGQ Residents Association',
         'description' => 'Website for NGQ residents',
