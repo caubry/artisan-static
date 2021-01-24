@@ -3,37 +3,24 @@
 @section('title', $page->title)
 
 @section('content')
-    <h1>{{ $page->title }}</h1>
+    <div class="w3-content" style="max-width:1564px">
+        <div class="w3-container w3-teal" id="post-header">
+            <h1>{{ $page->title }}</h1>
+            <p class="w3-border-bottom">{{ $page->prettyDate('F j, Y') }}</p>
+        </div>
 
-    @if ($page->image)
-        <img src="{{ $page->image }}" style="object-fit: cover; height: 250px; width: 100%;">
-    @endif
+        <div class="w3-container" id="post-content">
+            @yield('postContent')
+        </div>
 
-    <p>
-        <strong>{{ $page->prettyDate('F j, Y') }}</strong><br>
-        @foreach ($page->tags as $tag)
-            <a href="/tags/{{ $tag }}">{{ $tag }}</a>
-            {{ $loop->last ? '' : '-' }}
-        @endforeach
-    </p>
+        <div class="w3-container w3-topbar" id="post-comment">
+            @include('_partials.share')
 
-    <blockquote data-phpdate="{{ $page->date }}">
-        <em>WARNING: This post is over a year old. Some of the information this contains may be outdated.</em>
-    </blockquote>
-
-    <hr>
-
-    <p>DISCLAIMER: Any 3rd-party services in these posts and in the config are only recommendations/suggestions. I am not affiliated with any of them.</p>
-
-    @yield('postContent')
-
-    <hr>
-
-    @include('_partials.share')
-
-    @if ($page->comments)
-        @include('_partials.comments')
-    @else
-        <p>Comments are not enabled for this post.</p>
-    @endif
+            @if ($page->comments)
+                @include('_partials.comments')
+            @else
+                <p>Comments are not enabled for this post.</p>
+            @endif
+        </div>
+    </div>
 @endsection

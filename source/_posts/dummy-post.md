@@ -1,11 +1,7 @@
 ---
-title: '01 - Dummy Post'
+title: 'Dummy Post'
 date: 2019-04-30
-tags:
-  - css
-  - javascript
-  - php
-  - laravel
+description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
 image: https://res.cloudinary.com/artisanstatic/sample.jpg
 ---
 ## Heading 2

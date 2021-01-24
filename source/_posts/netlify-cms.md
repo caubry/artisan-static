@@ -1,7 +1,8 @@
 ---
-title: '07 - Netlify CMS'
+title: 'Netlify CMS'
 date: 2020-05-17
 image: https://res.cloudinary.com/artisanstatic/cms.jpg
+description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
 comments: false
 ---
 The included files related to Netlify CMS should work out of the box.

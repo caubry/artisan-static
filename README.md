@@ -14,8 +14,6 @@ ___
 - Contact form: [Formcarry](https://formcarry.com)
 - Google Analytics
 - Dynamic meta tags (SEO, Facebook Open Graph, Twitter Cards)
-- Posts can have multiple tags
-- Posts show a warning when potentially outdated (over 365 days old)
 - Code highlighting: [highlight.js](https://github.com/highlightjs/highlight.js)
 - Share buttons: [sharer.js](https://github.com/ellisonleao/sharer.js)
 - Comments: [Disqus](https://disqus.com)

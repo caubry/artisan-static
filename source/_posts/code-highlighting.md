@@ -1,8 +1,9 @@
 ---
-title: '06 - Code Highlighting'
+title: 'Code Highlighting'
 date: 2020-05-16
-image: https://res.cloudinary.com/artisanstatic/code.jpg
+image: https://res.cloudinary.com/artisanstatic/sample.jpg
 comments: false
+description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
 ---
 Below are some examples of code blocks with syntax highlighting.
 

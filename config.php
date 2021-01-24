@@ -2,7 +2,7 @@
 
 return [
     'production' => false,
-    'baseUrl' => 'https://artisanstatic.netlify.app',
+    'baseUrl' => 'http://localhost:3000',
     'site' => [
         'title' => 'NGQ Residents Association',
         'description' => 'Website for NGQ residents',
@@ -35,21 +35,9 @@ return [
             'section' => 'postContent',
             'isPost' => true,
             'comments' => true,
-            'tags' => [],
-            'hasTag' => function ($page, $tag) {
-                return collect($page->tags)->contains($tag);
-            },
             'prettyDate' => function ($page, $format = 'M j, Y') {
                 return date($format, $page->date);
             },
-        ],
-        'tags' => [
-            'path' => 'tags/{filename}',
-            'extends' => '_layouts.tag',
-            'section' => '',
-            'name' => function ($page) {
-                return $page->getFilename();
-            },
-        ],
+        ]
     ],
 ];
