@@ -2,16 +2,13 @@
 
 return [
     'production' => false,
-    'baseUrl' => 'https://admiring-babbage-9e06ba.netlify.app',
+    'baseUrl' => 'http://localhost:3000',
     'site' => [
         'title' => 'NGQ Residents Association',
         'description' => 'Website for NGQ residents',
-        'image' => 'default-share.png',
     ],
     'owner' => [
         'name' => 'NGQ Residents Association',
-        'twitter' => '',
-        'github' => '',
     ],
     'services' => [
         'cmsVersion' => '2.10.67',
