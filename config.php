@@ -6,12 +6,9 @@ return [
     'site' => [
         'title' => 'NGQ Residents Association',
         'description' => 'Website for NGQ residents',
-        'image' => 'default-share.png',
     ],
     'owner' => [
         'name' => 'NGQ Residents Association',
-        'twitter' => '',
-        'github' => '',
     ],
     'services' => [
         'cmsVersion' => '2.10.67',
